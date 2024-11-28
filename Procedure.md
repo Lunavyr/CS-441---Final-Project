@@ -15,7 +15,20 @@ This folder should directly include the various python source files provided by 
 
 
 
-### Set up environment:
+### Set up environment and run tests:
+`Follow this path to use included conda env`
+Conda documentation here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment
+1. In Anaconda Navigator, under "Environments" tab, select import option at the bottom of page to import included "env.yml".
+
+2. Whether through powershell or Anaconda promt - run:
+```
+conda activate [env | the name you chose from step 1.]
+jupyter notebook
+```
+
+3. Go to the directory the project is located in and find the file "2_Application_Codes.ipynb". Open it and follow steps.
+
+`Follow this path to recreate conda environment.`
 1. Download Anaconda from here: https://www.anaconda.com/download.  
 When installing, make sure to add Anaconda to path variable.
 
