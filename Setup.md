@@ -4,10 +4,9 @@ This page documents our process for replicating the vulnerability detection rese
 ## Set up core directory:
 *Since GitHub doesn't like large files, we have chosen to omit including the source project for this study.
 
-1. Clone base project repo into folder "Source Programs".  
-This folder should directly include the various python source files provided by the study as it will be referenced by our code later.
+1. Clone base project repo into folder somewhere, I chose - "Source Programs".  
 
-2. In the "Source Programs"/data/token, add a folder named SARD (This was probably omitted in the source repo since it represents intermediate data)
+2. In the "Source Programs"/data/token, add a folder named SARD (This was probably omitted in the source repo since it represents intermediate data used in generated training data)
 
 3. Clone the test data into a folder called "Source Data".
 

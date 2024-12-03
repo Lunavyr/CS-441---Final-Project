@@ -6,6 +6,7 @@
 
 from keras.layers import SimpleRNN
 
+# The name here is one of two changes made to the source "buildBGRU"
 def buildBRNN(maxlen, vector_dim, layers, dropout, myoptimizer): 
     print('Build model...')
     model = Sequential()
@@ -13,6 +14,7 @@ def buildBRNN(maxlen, vector_dim, layers, dropout, myoptimizer):
     model.add(Masking(mask_value=0.0, input_shape=(maxlen, vector_dim)))
     
     for i in range(1, layers):
+        # This is the second change: GRU -> SimpleRNN; and removed the param: "recurrent_activation"
         model.add(Bidirectional(SimpleRNN(units=256, activation='tanh', return_sequences=True)))
         model.add(Dropout(dropout))
         

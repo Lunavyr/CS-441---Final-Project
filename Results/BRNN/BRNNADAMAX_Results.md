@@ -1,5 +1,5 @@
-# Bidirectional Recurrent Neural Network with ADAM:
-(Uses image-[1,6])
+# Bidirectional Recurrent Neural Network with ADAMAX:
+(Uses image-[7,12])
 
 ## Training:
 Build model...
@@ -28,25 +28,25 @@ DL_Final_balancedClassTrain.pkl
 368 368
 start
 Epoch 1/10
-11/11 [==============================] - 10s 908ms/step - loss: 0.8533 - accuracy: 0.4830
+11/11 [==============================] - 10s 917ms/step - loss: 0.9755 - accuracy: 0.5057
 Epoch 2/10
-11/11 [==============================] - 8s 688ms/step - loss: 0.7092 - accuracy: 0.5369
+11/11 [==============================] - 8s 700ms/step - loss: 0.6991 - accuracy: 0.5426
 Epoch 3/10
-11/11 [==============================] - 8s 754ms/step - loss: 0.6869 - accuracy: 0.5909
+11/11 [==============================] - 8s 721ms/step - loss: 0.6459 - accuracy: 0.6449
 Epoch 4/10
-11/11 [==============================] - 8s 696ms/step - loss: 0.6774 - accuracy: 0.6080
+11/11 [==============================] - 8s 714ms/step - loss: 0.6217 - accuracy: 0.6676
 Epoch 5/10
-11/11 [==============================] - 8s 740ms/step - loss: 0.7111 - accuracy: 0.5284
+11/11 [==============================] - 8s 693ms/step - loss: 0.5727 - accuracy: 0.7301
 Epoch 6/10
-11/11 [==============================] - 8s 745ms/step - loss: 0.7219 - accuracy: 0.5653
+11/11 [==============================] - 9s 778ms/step - loss: 0.5369 - accuracy: 0.7216
 Epoch 7/10
-11/11 [==============================] - 8s 745ms/step - loss: 0.7000 - accuracy: 0.5483
+11/11 [==============================] - 8s 687ms/step - loss: 0.4938 - accuracy: 0.7585
 Epoch 8/10
-11/11 [==============================] - 8s 740ms/step - loss: 0.7782 - accuracy: 0.5028
+11/11 [==============================] - 8s 690ms/step - loss: 0.4809 - accuracy: 0.7727
 Epoch 9/10
-11/11 [==============================] - 8s 706ms/step - loss: 0.8194 - accuracy: 0.4830
+11/11 [==============================] - 8s 713ms/step - loss: 0.4257 - accuracy: 0.8182
 Epoch 10/10
-11/11 [==============================] - 8s 738ms/step - loss: 0.7733 - accuracy: 0.5284
+11/11 [==============================] - 8s 706ms/step - loss: 0.4477 - accuracy: 0.7869
 
 
 
@@ -72,7 +72,7 @@ Total params: 1,328,641
 Trainable params: 1,328,641
 Non-trainable params: 0
 _________________________________________________________________
-[0.560071, 0.7271531, 0.6064333, 0.51279163, 0.7517774, 0.20042418, 0.6776182, 0.83070034, 0.48296615, 0.6167989]
+[0.59559715, 0.88777274, 0.031747553, 0.59559715, 0.30834484, 0.93221796, 0.9319544, 0.64929235, 0.027564345, 0.1354993]
 predicted array shape:  (400, 1)
 new real label array shape:  (400, 1)
 
@@ -83,18 +83,18 @@ Predicted Class
 Total Samples 400.0
 | Type     |   Positive |   Negative |
 |----------+------------+------------|
-| Positive |         64 |         41 |
-| Negative |        149 |        146 |
+| Positive |         90 |         15 |
+| Negative |        105 |        190 |
 
 Predicted Class
 ╒══════════╤════════════════════╤════════════════════╤════════════════════╤═════════════╕
 │          │ Positive           │ Negative           │ Rate               │             │
 ╞══════════╪════════════════════╪════════════════════╪════════════════════╪═════════════╡
-│ Positive │ 64.0               │ 41.0               │ 0.6095238327980042 │ Sensitivity │
+│ Positive │ 90.0               │ 15.0               │ 0.8571428656578064 │ Sensitivity │
 ├──────────┼────────────────────┼────────────────────┼────────────────────┼─────────────┤
-│ Negative │ 149.0              │ 146.0              │ 0.494915246963501  │ specificity │
+│ Negative │ 105.0              │ 190.0              │ 0.6440678238868713 │ specificity │
 ├──────────┼────────────────────┼────────────────────┼────────────────────┼─────────────┤
-│          │ 0.3004694879055023 │ 0.7807486653327942 │ 0.5249999761581421 │ Accuracy    │
+│          │ 0.4615384638309479 │ 0.9268292784690857 │ 0.699999988079071  │ Accuracy    │
 ├──────────┼────────────────────┼────────────────────┼────────────────────┼─────────────┤
 │          │ Precision          │ NegPrediction      │                    │             │
 ╘══════════╧════════════════════╧════════════════════╧════════════════════╧═════════════╛
@@ -104,19 +104,19 @@ Predicted Class
 
 ## Graphed Outputs:
 ### Distribution per CVE type
-![alt text](image-1.png)
+![alt text](image-7.png)
 
 ### Prediction distribution
-![alt text](image-2.png)
+![alt text](image-8.png)
 
 ### Recall Vs. Precision
-![alt text](image-3.png)
+![alt text](image-9.png)
 
 ### Accuracy Vs. F1 score
-![alt text](image-4.png)
+![alt text](image-10.png)
 
 ### Balanced Accuracy Vs. Accuracy
-![alt text](image-5.png)
+![alt text](image-11.png)
 
 ### Specificity Vs. Accuracy
-![alt text](image-6.png)
+![alt text](image-12.png)
