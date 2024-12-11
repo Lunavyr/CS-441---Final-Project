@@ -19,4 +19,4 @@ Specifically, we aim to compare the comparative accuracy, specificity, and recal
 Note - files for steps 2 and 3 can be found in the "Code" directory.
 
 ## Results & Conclusions:
-See Word document
+See Final Report - https://docs.google.com/document/d/11XNyTlBlgrArX8bGyRfKUKO6WTt7SXSsORWxK7n71SA/edit?usp=sharing
